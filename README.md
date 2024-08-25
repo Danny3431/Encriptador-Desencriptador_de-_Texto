@@ -1,29 +1,32 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 # Encriptador/Desencriptador de Texto
 
 Este proyecto es una aplicación web sencilla que permite encriptar y desencriptar texto. Está diseñada para funcionar directamente en el navegador, utilizando HTML, CSS y JavaScript. La herramienta es ideal para quienes necesitan una forma rápida y segura de transformar texto en un formato encriptado y luego revertirlo a su forma original.
 
-## Características
+## 🚀Características
 
-- **Encriptación**: Convierte el texto ingresado en un formato encriptado utilizando un conjunto de reglas específicas.
-- **Desencriptación**: Transforma el texto encriptado de vuelta a su formato original.
-- **Copiar al portapapeles**: Permite copiar el resultado de la encriptación o desencriptación al portapapeles para su uso inmediato.
-- **Validación de texto**: Acepta solo letras minúsculas sin acentos ni caracteres especiales para asegurar un funcionamiento correcto.
 
-## Tecnologías Utilizadas
+- 🔒<i class="fas fa-lock"></i> **Encriptación**: Convierte el texto ingresado en un formato encriptado utilizando un conjunto de reglas específicas.
+- 🔓<i class="fas fa-unlock"></i>**Desencriptación**: Transforma el texto encriptado de vuelta a su formato original.
+- 📄**Copiar al portapapeles**: Permite copiar el resultado de la encriptación o desencriptación al portapapeles para su uso inmediato.
+- 🌟<i class="fas fa-desktop"></i>**Validación de texto**: Acepta solo letras minúsculas sin acentos ni caracteres especiales para asegurar un funcionamiento correcto.
+
+## 🌐Tecnologías Utilizadas
 
 - **HTML5**: Estructura básica de la aplicación web.
 - **CSS3**: Diseño y estilización de la interfaz de usuario.
 - **JavaScript**: Lógica para la encriptación, desencriptación y manejo de la interfaz.
 
-## Estructura del Proyecto
--*index.html* # Página principal con la interfaz de usuario
--*style/* # Carpeta para los estilos CSS
+## 📦Estructura del Proyecto
+- *index.html* # Página principal con la interfaz de usuario
+- *style/* # Carpeta para los estilos CSS
   -*style.css* # Archivo de estilos CSS
 - *script.js* # Lógica de encriptación/desencriptación
 - *assets/* # Carpeta con imágenes y otros recursos
 - *Logo.png* # Logo del proyecto
 - *Muneco.png* # Imagen decorativa utilizada en la página
-## Cómo Usar
+## 🖥️ Cómo Usar
 
 1. **Encriptar Texto**:
    - Ingresa el texto en el área de texto bajo la sección "Encriptar".
@@ -47,7 +50,7 @@ Este proyecto es una aplicación web sencilla que permite encriptar y desencript
 - **Mejorar la interfaz de usuario**: Optimizar el diseño para una mejor experiencia en dispositivos móviles.
 - **Soporte para diferentes idiomas**: Adaptar la aplicación para trabajar con otros alfabetos y caracteres especiales.
 
-## Contacto
+## 📧Contacto
 
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 
