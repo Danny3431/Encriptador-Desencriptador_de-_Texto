@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador/Desencriptador</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/Logo.png" alt="Logo" class="logo">
+    </header>
+    <h1>Encriptador/Desencriptador</h1>
+    <div class="container">
+        <div class="box">
+            <h2>Encriptar</h2>
+            <textarea id="inputTextoEncriptar" placeholder="Ingresa el texto aquí..."></textarea><br>
+            <button onclick="encriptar()">Encriptar</button>
+            <button onclick="borrarTexto('inputTextoEncriptar')">Borrar</button>
+            <div id="resultadoEncriptar"></div>
+        </div>
+        
+        <div class="box__muneco">
+            <img src="./assets/Muneco.png" class="muneco" alt="Muñeco">            
+            <p class="mensaje">Puedes escribir frases, pero solo acepta solo letras minúsculas sin acentos, ni caracteres especiales.</p>
+            <button class="boton_copiar"  onclick="copiarTexto()">Copiar Resultado</button>
+         </div>
+         
+            
+        <div class="box">
+            <h2>Desencriptar</h2>
+            <textarea id="inputTextoDesencriptar" placeholder="Ingresa el texto aquí..."></textarea><br>
+            <button onclick="desencriptar()">Desencriptar</button>
+            <button onclick="borrarTexto('inputTextoDesencriptar')">Borrar</button>
+            <div id="resultadoDesencriptar"></div>
+        </div>
+    
+
+    <script src="script.js"></script>
+
+</body>
+<footer class="footer">
+    <p >Desarrollado por Daniela Puebla</p>
+    <p>
+        <a href="https://www.linkedin.com/in/daniela-pueblam31" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/Danny3431" target="_blank">GitHub</a> | 
+        Correo: <a href="mailto:daniela.pueblam31@gmail.com">daniela.pueblam31@gmail.com</a>
+    </p>
+</footer>
+</html>

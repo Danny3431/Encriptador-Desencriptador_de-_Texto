@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --color-uno: #C7EFC4;
+    --color-dos: #F6F6F6;
+    --color-tres: #7EDCAF;
+    --color-cuatro: #0A3871;
+    --color-cinco:#a1a2a3f1;
+    --color-seis: #272727;
+    --fuente-ptserif: 'PT Serif', serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+
+body {
+    font-family: var(--fuente-ptserif);
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(180deg, #d4d8e5 32.24%, #8ba0e5 80%);
+    border: 1px solid #000000;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);;
+    border-radius: 32px;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Espaciado entre elementos */
+    flex-wrap: wrap; /* Permite que se apilen en pantallas pequeñas */
+}
+
+.box {
+    flex: 10 10 400px; 
+    margin: 2px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-cinco);
+    background-color: var(--color-dos);
+    min-width: 400px; /* Ancho mínimo para cada caja */
+}
+.box__muneco{
+    flex: 0 0 22%; /* Ancho fijo del 25% */
+    display: flex;
+    flex-direction: column; /* Organiza el contenido verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: var(--color-tres);
+    box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0; /* Espaciado vertical */
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--color-cinco);
+    resize: none; /* Evita cambiar el tamaño */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+button {
+    background-color: var(--color-cinco);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-cuatro);
+}
+
+#resultadoEncriptar, #resultadoDesencriptar {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid var(--color-cinco);
+    background-color: var(--color-uno);
+}
+
+.muneco {
+    max-width: 100%; /* Ajusta el tamaño del muñeco */
+    margin-bottom: 10px; /* Espacio debajo del muñeco */
+}
+
+.mensaje {
+    margin: 10px 0; /* Espacio vertical alrededor del texto */
+    text-align: center; /* Centra el texto */
+}
+
+.boton_copiar {
+    padding: 10px 15px; /* Espaciado del botón */
+    background-color: var(--color-cinco); /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--color-uno);
+    border-top: 1px solid var(--color-cinco);
+    border: 1px solid #000;
+    width: 110%; /* Asegura que el footer ocupe el 100% del ancho */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    border-radius: 10px; /* Ajusta el valor para el redondeo */
+}
+
+.footer {
+    color: var(--color-seis);
+    background-color: var(--color-tres);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+footer p {
+    margin: 0; /* Elimina márgenes */
+}
+
+footer a {
+    color: var(--color-cuatro);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--color-seis);
+}
+
+.logo, .muneco {
+    max-width: 70%; /* Se ajustan al contenedor */
+    height: auto; /* Mantiene la proporción */
+}
+@media (max-width: 900px) {
+    .box {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .box {
+        flex: 1 1 100%;
+    }
+}
+
+
