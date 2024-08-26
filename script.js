@@ -1,5 +1,5 @@
 function validarTexto(texto) {
-    // Acepta solo letras minúsculas sin acentos ni caracteres especiales
+    // Acepta solo letras  sin acentos ni caracteres especiales
     const regex = /^[a-z\s]+$/; 
     return regex.test(texto);
 }
@@ -8,7 +8,7 @@ function validarTexto(texto) {
 function encriptar() {
     const texto = document.getElementById("inputTextoEncriptar").value.toLowerCase();
     if (!validarTexto(texto)) {
-        alert("Solo se permiten letras minúsculas sin acentos ni caracteres especiales.");
+        alert("Solo se permiten letras sin acentos ni caracteres especiales.");
         return;
     }
     const textoEncriptado = texto
@@ -23,7 +23,7 @@ function encriptar() {
 function desencriptar() {
     const texto = document.getElementById("inputTextoDesencriptar").value.toLowerCase();
     if (!validarTexto(texto)) {
-        alert("Solo se permiten letras minúsculas sin acentos ni caracteres especiales.");
+        alert("Solo se permiten letras sin acentos ni caracteres especiales.");
         return;
     }
     const textoDesencriptado = texto
