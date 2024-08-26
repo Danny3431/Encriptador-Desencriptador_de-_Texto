@@ -155,32 +155,40 @@ footer a:hover {
     }
     body {
         margin: 5px;
-        padding: 10px;
-        width: 95%;
+        padding: 10px;       
     }
     .box, .box__muneco {
-        flex: 1 1 100%; /* Toman todo el ancho disponible */
+        flex: 1 1 95%; /* Toman todo el ancho disponible */
+    }
+    .footer{
+        font-size: 1rem;
+        font-weight: 300;
     }
 }
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 1.6rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        font-size: 1.5rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
         margin: 10px 0;
     }
     body {
         margin: 10px;
         padding: 10px;
-        width: 95%;
+        
     }
 
     .box, .box__muneco {
         margin: 5px;
         padding: 10px;
+        
     }
 
     footer {
         width: 100%;
         padding: 10px;
+    }
+    .footer{
+        font-size: 1rem;
+        font-weight: 300;
     }
 }
