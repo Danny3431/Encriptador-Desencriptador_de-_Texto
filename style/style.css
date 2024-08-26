@@ -5,12 +5,11 @@
     --color-dos: #F6F6F6;
     --color-tres: #7EDCAF;
     --color-cuatro: #0A3871;
-    --color-cinco:#a1a2a3f1;
+    --color-cinco: #a1a2a3f1;
     --color-seis: #272727;
     --fuente-ptserif: 'PT Serif', serif;
     --fuente-montserrat: 'Montserrat', sans-serif;
 }
-
 
 body {
     font-family: var(--fuente-ptserif);
@@ -18,29 +17,32 @@ body {
     padding: 20px;
     background: linear-gradient(180deg, #d4d8e5 32.24%, #8ba0e5 80%);
     border: 1px solid #000000;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
-
+h1 {
+    font-size: 3rem; /* Tamaño de fuente por defecto para pantallas grandes */
+    text-align: center;
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
 .container {
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    justify-content: center; /* Espaciado entre elementos */
-    flex-wrap: wrap; /* Permite que se apilen en pantallas pequeñas */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
 }
 
 .box {
-    flex: 10 10 400px; 
-    margin: 2px;
+    flex: 1 1 300px; /* Se ajusta según el tamaño del contenedor */
+    margin: 10px;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--color-cinco);
     background-color: var(--color-dos);
-    min-width: 400px; /* Ancho mínimo para cada caja */
 }
-.box__muneco{
-    flex: 0 0 22%; /* Ancho fijo del 25% */
+.box__muneco {
+    flex: 0 0 22%; /* Mantiene el ancho máximo al 22% */
     display: flex;
     flex-direction: column; /* Organiza el contenido verticalmente */
     justify-content: center; /* Centra el contenido verticalmente */
@@ -51,6 +53,7 @@ body {
     border-radius: 8px;
     background-color: var(--color-tres);
     box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+    max-width: 380px; /* Asegura que tenga el ancho disponible */
 }
 
 textarea {
@@ -61,7 +64,7 @@ textarea {
     border-radius: 4px;
     border: 1px solid var(--color-cinco);
     resize: none; /* Evita cambiar el tamaño */
-    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    box-sizing: border-box;/* Incluye padding y border en el ancho total */
 }
 
 button {
@@ -111,7 +114,7 @@ footer {
     background-color: var(--color-uno);
     border-top: 1px solid var(--color-cinco);
     border: 1px solid #000;
-    width: 110%; /* Asegura que el footer ocupe el 100% del ancho */
+    width: 110%; /* Asegura que el footer ocupe el 110% del ancho */
     box-sizing: border-box; /* Incluye padding en el ancho total */
     border-radius: 10px; /* Ajusta el valor para el redondeo */
 }
@@ -127,7 +130,7 @@ footer {
 }
 
 footer p {
-    margin: 0; /* Elimina márgenes */
+    margin: 0;
 }
 
 footer a {
@@ -144,16 +147,40 @@ footer a:hover {
     max-width: 70%; /* Se ajustan al contenedor */
     height: auto; /* Mantiene la proporción */
 }
+
 @media (max-width: 900px) {
-    .box {
-        flex: 1 1 45%;
+    h1 {
+        font-size: 2.5rem; /* Ajusta el tamaño de la fuente para pantallas medianas */
+        margin: 15px 0;
+    }
+    body {
+        margin: 5px;
+        padding: 10px;
+        width: 95%;
+    }
+    .box, .box__muneco {
+        flex: 1 1 100%; /* Toman todo el ancho disponible */
     }
 }
 
 @media (max-width: 600px) {
-    .box {
-        flex: 1 1 100%;
+    h1 {
+        font-size: 1.6rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        margin: 10px 0;
+    }
+    body {
+        margin: 10px;
+        padding: 10px;
+        width: 95%;
+    }
+
+    .box, .box__muneco {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    footer {
+        width: 100%;
+        padding: 10px;
     }
 }
-
-
